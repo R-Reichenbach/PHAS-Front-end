@@ -1,0 +1,18 @@
+<div class="login-content">
+    <form class="form-content" [formGroup]="loginForm">
+
+        <img src="https://as2.ftcdn.net/jpg/02/29/75/83/500_F_229758328_PqBlEGeRm5ERsVRCmWq38lrYxz4XrDq0.jpg" alt="User Icon" class="user-icon">
+
+        <div>
+            <div>
+                <input class="input-login" placeholder="E-mail" formControlName="email"/>
+            </div>
+            <div class="error-message" 
+            *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">
+                Email is required!
+            </div>
+        </div>
+
+        <button class="input-submit" type="submit">Send</button>
+    </form>
+</div>
