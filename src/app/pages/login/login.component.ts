@@ -6,26 +6,25 @@ import { LoginModel } from 'src/app/models/LoginModel';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-
   loginForm!: FormGroup;
 
-    constructor( private  formbuilder: FormBuilder,
-      private router: Router){ }
+  constructor(
+    private formbuilder: FormBuilder,
+    private router: Router,
+  ) {}
 
-    ngOnInit(): void{
-      this.loginForm = this.formbuilder.group(
-        {
-          email: ['', [Validators.required, Validators.email]],
-          senha: ['', [Validators.required]],
-        }
-      );
-    }
-    
-    submitLogin(){
-      debugger
-      var dadosLogin = this.loginForm.getRawValue() as LoginModel;
-    }
+  ngOnInit(): void {
+    this.loginForm = this.formbuilder.group({
+      email: ['', [Validators.required, Validators.email]],
+      senha: ['', [Validators.required]],
+    });
+  }
+
+  submitLogin() {
+    debugger;
+    var dadosLogin = this.loginForm.getRawValue() as LoginModel;
+  }
 }

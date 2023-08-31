@@ -1,32 +1,43 @@
 <div class="login-content">
-    <form class="form-content" [formGroup]="loginForm">
+  <form class="form-content" [formGroup]="loginForm">
+    <div class="container-text-log">
+      <h2>LOG-IN</h2>
+    </div>
+    <div class="img-container">
+      <img
+        src="assets/images/user-profile.jpg"
+        alt="User Icon"
+        class="user-icon"
+      />
+    </div>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        formControlName="email"
+        placeholder="Ex. pat@example.com"
+      />
+      <mat-error
+        *ngIf="
+          loginForm.controls['email'].hasError('email') &&
+          !loginForm.controls['email'].hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
 
-            <div class="container-text-log">
-                     <h3>LOG-IN</h3>
-            </div>
-                <div class="img-container">
-        <img src="assets/images/user-profile.jpg" alt="User Icon" class="user-icon">
-                </div>
-
-        <div>
-            <div>
-                <input class="input-login" placeholder="E-mail:" formControlName="email"/>
-            </div>
-            <div class="error-message" 
-            *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">
-                Email is required!
-            </div>
-            </div>
-        
-        <div class="container-button">
-            <a href="#">
-        <button class="input-submit" type="submit" value="submit">Send</button>
-            </a>
-
-            <div class="register-link">
-            <a href="#" class="link">Register</a>
-            </div>
-
-        </div>
-    </form>
+    <div class="container-button">
+      <a mat-flat-button href="#" target="_blank"
+        >Don't have account? Register</a
+      >
+      <button mat-raised-button color="primary" (click)="submitLogin()">
+        Send
+      </button>
+    </div>
+  </form>
 </div>
