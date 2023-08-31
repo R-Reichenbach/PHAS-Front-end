@@ -1,11 +1,11 @@
- .login-content{
+.login-content{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10%;
 
     .form-content{
-        border-radius: 10px;
+        
         background: #fff;
         box-shadow: 0 30px 60px 0 gray;
         text-align: center;
@@ -23,9 +23,9 @@
 
 .input-login{
     border: none;
-    color: #0d0d0d0d;
+    color: black;
     padding: 0px;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     margin: 5px;
     width: 90%;
@@ -33,10 +33,17 @@
     border-radius: 5px;
 }
 
+
 .error-message{
     font-size: 10px;
     color: rgb(255, 65, 65);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Italic, Helvetica, sans-serif;
+}
+
+.container-text-log{
+    padding-top: 2px;
+    color: black;
+    font-family: Medium Italic, Helvetica, sans-serif;
 }
 
 .input-submit{
@@ -44,9 +51,8 @@
     border: none;
     color: #FFFFFF;
     margin-top: 15px;
-    margin-left: 500px;
     margin-bottom: 10px;
-    text-align: unset;
+    text-align: center;  
     text-transform: uppercase;
     font-size: 12px;
     box-shadow: 0 10px 30px 0 rgb(54, 54, 54);
@@ -57,6 +63,11 @@
     cursor: pointer;
 }    
 
+.container-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .user-icon{
     width: 80px;
     margin-top: 0px;
@@ -64,3 +75,31 @@
     padding-top: 5px;
     margin-right: 250px;
 }
+
+.error-message{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-login{
+    border: none;
+    border-bottom: 2px solid #9A9A9A;
+    padding: 5px;
+}
+
+.input-login:focus{
+    outline: none;
+    border-color: black ;
+}
+
+.register-link{
+    color: black;
+    text-decoration: none;
+    font-family: Medium Italic, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.a:link{
+    color: black;
+}
+
