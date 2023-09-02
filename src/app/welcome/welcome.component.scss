@@ -1,0 +1,76 @@
+.welcome-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+
+  .form-contentw {
+    background: #ECECEC;
+    box-shadow: 0 30px 60px 0 rgb(54, 54, 54);
+    text-align: center;
+    width: 30%;
+    height: 13rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .form-contentw:hover {
+    box-shadow: 0 30px 60px 0 #566573;
+  }
+}
+
+.input-welcome {
+  background-color: #D9D9D9;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 16px;
+  margin: 5px;
+  width: 90%;
+  border: 2px solid #f6f6f6;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.input-welcome:focus {
+  outline: none;
+  border-color: black;
+}
+
+.container-text-log-wel {
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  font-family:
+    Medium Italic,
+    Helvetica,
+    sans-serif;
+}
+
+.wht {
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  font-family:
+    Medium Italic,
+    Helvetica,
+    sans-serif;
+}
+
+.register-button {
+  flex-wrap: wrap;
+  display: inline-block;
+  justify-content: left;
+  align-items: left;
+  margin-right: 40px;
+  margin-top: 2rem;
+}
+
+.view-button {
+  flex-wrap: wrap;
+  display: flex;
+  display: inline-block;
+  justify-content: right;
+  align-items: right;
+  margin-left: 30px;
+}

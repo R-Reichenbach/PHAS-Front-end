@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { PasswordComponent } from './pages/password/password.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,15 @@ const routes: Routes = [
     path: 'password',
     component: PasswordComponent,
   },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'welcome',
+  },
+  {
+    path: 'welcome',
+    component: WelcomeComponent,
+  }
 ];
 
 @NgModule({

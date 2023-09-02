@@ -11,9 +11,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { PasswordComponent } from './pages/password/password.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, PasswordComponent],
+  declarations: [AppComponent, LoginComponent, PasswordComponent, WelcomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
