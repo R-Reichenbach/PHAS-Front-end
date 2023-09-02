@@ -90,3 +90,19 @@
     display: flex;
     justify-content: center;
 }
+
+.container-button1{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-inline: 15px;
+}
+
+.container-button2{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  padding-inline: 15px;
+  padding-bottom: 10px;
+}
+
