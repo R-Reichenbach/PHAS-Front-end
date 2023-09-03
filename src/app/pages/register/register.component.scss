@@ -1,0 +1,35 @@
+.register-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+  
+    .form-contentr {
+      background: #fff;
+      box-shadow: 0 30px 60px 0 rgb(54, 54, 54);
+      justify-content: center;
+      text-align: center;
+      width: 40%;
+      height: 40rem;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    .form-contentr:hover {
+      box-shadow: 0 30px 60px 0 #566573;
+    }
+  }
+ 
+  .input-register:focus {
+      outline: none;
+      border-color: black;
+    }
+  
+  .container-text-log-reg{
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      font-family:
+      Medium Italic,
+      Helvetica,
+      sans-serif;
+  }
