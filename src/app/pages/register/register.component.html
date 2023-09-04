@@ -4,16 +4,14 @@
       <h2>Register</h2>
       <h3>Create Your Account!</h3>
     </div>
-
     <div>
-      
       <form class="example-form">
         <table class="example-full-width" cellspacing="0">
           <tr>
             <td>
               <mat-form-field class="example-full-width">
                 <mat-label>First name</mat-label>
-                <input matInput />
+                <input formControlName="name" matInput />
               </mat-form-field>
             </td>
             <td>
@@ -25,24 +23,30 @@
             </td>
           </tr>
         </table>
+        <mat-form-field class="email-pass">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" required />
+        </mat-form-field>
 
+        <mat-form-field>
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" />
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
         <p>
           <mat-form-field class="example-full-width-address">
             <mat-label>Address</mat-label>
             <textarea matInput placeholder="Ex. Av. Paulista"></textarea>
           </mat-form-field>
-          <mat-form-field class="example-full-width-adress2">
+          <mat-form-field class="example-full-width-adress">
             <mat-label>Address 2</mat-label>
             <textarea matInput placeholder="Ex. Rua Oscar Freire"></textarea>
           </mat-form-field>
         </p>
+
         
-        <mat-form-field class="example-full-width-telphone">
-          <mat-label>Telephone</mat-label>
-          <span matPrefix>+55 &nbsp;</span>
-          <input type="tel" matInput placeholder="011 12345-1234" />
-          <mat-icon matSuffix></mat-icon>
-        </mat-form-field>
 
         <table class="example-full-width" cellspacing="0">
           <tr>
@@ -61,7 +65,7 @@
             <td></td>
           </tr>
         </table>
-        <mat-form-field class="example-full-width-code">
+        <mat-form-field class="example-full-width-code-tel">
           <mat-label>Postal Code</mat-label>
           <input
             matInput
@@ -70,6 +74,12 @@
             placeholder="Ex. 12000-000"
           />
           <mat-hint align="end">{{ postalCode.value.length }}</mat-hint>
+        </mat-form-field>
+        <mat-form-field class="example-full-width-code-tel">
+          <mat-label>Telephone</mat-label>
+          <span matPrefix>+55 &nbsp;</span>
+          <input type="tel" matInput placeholder="011 12345-1234" />
+          <mat-icon matSuffix></mat-icon>
         </mat-form-field>
       </form>
     </div>

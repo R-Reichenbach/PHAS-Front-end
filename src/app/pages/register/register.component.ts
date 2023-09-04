@@ -4,6 +4,9 @@ import { Router } from '@angular/router';
 import { RegisterModel } from 'src/app/models/RegisterModel';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @Component({
   selector: 'app-register',
@@ -12,6 +15,7 @@ import {MatIconModule} from '@angular/material/icon';
 })
 export class RegisterComponent {
   registerForm!: FormGroup;
+  hide: boolean = true;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -22,6 +26,7 @@ export class RegisterComponent {
     this.registerForm = this.formBuilder.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
+      password:['', [Validators.required]],
       telphone: ['', [Validators.required]],
       address: ['', [Validators.required]],
       number: ['', [Validators.required]],

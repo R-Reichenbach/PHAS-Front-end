@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 import { PasswordComponent } from './pages/password/password.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -31,6 +32,7 @@ import { RegisterComponent } from './pages/register/register.component';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

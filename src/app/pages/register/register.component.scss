@@ -1,61 +1,73 @@
 .register-content {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  margin: 10%;
+
+  .form-contentr {
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgb(54, 54, 54);
+    border-radius: 10px;
     justify-content: center;
-    align-items: center;
-    margin: 10%;
-  
-    .form-contentr {
-      background: #fff;
-      box-shadow: 0 30px 60px 0 rgb(54, 54, 54);
-      justify-content: center;
-      text-align: center;
-      width: 35%;
-      height: 40rem;
-      transition: all 0.5s ease-in-out;
-    }
-  
-    .form-contentr:hover {
-      box-shadow: 0 30px 60px 0 #566573;
-    }
-  }
- 
-  .input-register:focus {
-      outline: none;
-      border-color: black;
-    }
-  
-  .container-text-log-reg{
-      justify-content: center;
-      align-items: center;
-      padding-top: 20px;
-      font-family:
-      Medium Italic,
-      Helvetica,
-      sans-serif;
+    text-align: center;
+    width: 35%;
+    height: 40rem;
+    transition: all 0.5s ease-in-out;
   }
 
-  .example-full-width{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    padding-left: 5px;
+  .form-contentr:hover {
+    box-shadow: 0 30px 60px 0 #566573;
   }
+}
 
-  .example-full-width-address{
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
+.input-register:focus {
+  outline: none;
+  border-color: black;
+}
 
-  .example-full-width-address2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
+.container-text-log-reg {
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  font-family:
+    Medium Italic,
+    Helvetica,
+    sans-serif;
+}
 
-  .example-full-width-telphone{
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+.example-full-width {
+  display: inline-flex;
+  padding: auto;
+  padding-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-full-width-address {
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.example-full-width-code-tel {
+  display: inline-flex;
+  padding: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-pass {
+  display: inline-flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-full-width-city {
+  display: inline-flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
