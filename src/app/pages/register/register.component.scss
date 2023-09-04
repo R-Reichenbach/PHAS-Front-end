@@ -9,7 +9,7 @@
       box-shadow: 0 30px 60px 0 rgb(54, 54, 54);
       justify-content: center;
       text-align: center;
-      width: 40%;
+      width: 35%;
       height: 40rem;
       transition: all 0.5s ease-in-out;
     }
@@ -32,4 +32,30 @@
       Medium Italic,
       Helvetica,
       sans-serif;
+  }
+
+  .example-full-width{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+
+  .example-full-width-address{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .example-full-width-address2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .example-full-width-telphone{
+    padding-left: 5px;
+    padding-right: 5px;
   }
