@@ -5,9 +5,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatInputModule} from '@angular/material/input';
 
-
-
-
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
@@ -31,5 +28,4 @@ export class WelcomeComponent {
   submitWelcome(){
     debugger
   }
-
 }
