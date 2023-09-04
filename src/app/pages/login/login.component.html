@@ -1,0 +1,45 @@
+<div class="login-content">
+  <form class="form-content" [formGroup]="loginForm">
+    <div class="container-text-log">
+      <h2>Log-In</h2>
+    </div>
+    <div class="img-container">
+      <img
+        src="assets/images/user-profile.jpg"
+        alt="User Icon"
+        class="user-icon"
+      />
+    </div>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        formControlName="email"
+        placeholder="Ex. pat@example.com"
+      />
+      <mat-error
+        *ngIf="
+          loginForm.controls['email'].hasError('email') &&
+          !loginForm.controls['email'].hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <div class="container-button1">
+      <a mat-flat-button href="#" target="_blank"
+        >Don't have account? Register</a
+      >
+    </div>
+    <div class="container-button2">
+      <button mat-raised-button color="primary" (click)="submitLogin()">
+        Send
+      </button>
+    </div>
+  </form>
+</div>
