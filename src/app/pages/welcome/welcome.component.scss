@@ -2,14 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   margin: 10%;
 
   .form-contentw {
     background: #ECECEC;
     box-shadow: 0 30px 60px 0 rgb(54, 54, 54);
     text-align: center;
+    border-radius: 10px;
     width: 30%;
-    height: 13rem;
+    height: 14rem;
     transition: all 0.5s ease-in-out;
   }
 

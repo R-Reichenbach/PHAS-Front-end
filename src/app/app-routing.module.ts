@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { PasswordComponent } from './pages/password/password.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { DatatableComponent } from './pages/datatable/datatable.component';
 
 const routes: Routes = [
   {
@@ -18,31 +19,21 @@ const routes: Routes = [
   },
 
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'password',
-  },
-  {
     path: 'password',
     component: PasswordComponent,
   },
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'welcome',
-  },
+
   {
     path: 'welcome',
     component: WelcomeComponent,
   },
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'register',
-  },
-  {
     path: 'register',
     component: RegisterComponent,
+  },
+  {
+    path: 'datatable',
+    component: DatatableComponent,
   }
 ];
 

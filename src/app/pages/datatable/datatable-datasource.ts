@@ -14,7 +14,7 @@ export interface DatatableItem {
 }
 
 // TODO: replace this with real data from your application
-const EXAMPLE_DATA: DatatableItem[] = [
+export const EXAMPLE_DATA: DatatableItem[] = [
   {id: 'Gabriel', name: 99112233456, email: 'emai@email.com', adress: 'Vale do Sol', city: 'Birigui'},
   {id: 'Ratin', name: 99112233456, email: 'emai@email.com', adress: 'Vale do Sol', city: 'Birigui'},
   {id: 'Gabriel2', name: 99112233456, email: 'emai@email.com', adress: 'Vale do Sol', city: 'Birigui'}
