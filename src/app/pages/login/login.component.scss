@@ -54,6 +54,18 @@
   padding-top: 5px;
 }
 
+.icon-but {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+a{
+  color: black;
+}
+
 .error-message {
   position: relative;
   margin-bottom: 20px;

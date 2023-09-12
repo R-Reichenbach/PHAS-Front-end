@@ -2,16 +2,22 @@
   <form class="form-contentw" [formGroup]="welcomeForm">
     <div class="container-text-log-wel">
       <h2>WELCOME!</h2>
+      
     </div>
     <div class="wht">
       <h4>What do You Want to do Today?</h4>
     </div>
+    
     <div class="button-container">
+      
       <div class="register-button">
-        <button mat-raised-button color="primary">New Register</button>
+        <button mat-raised-button color="primary" routerLink="/register">Register</button>
+      </div>
+      <div class="login-button">
+        <button mat-stroked-button color="primary" routerLink="/login">Login</button>
       </div>
       <div class="view-button">
-        <button mat-raised-button color="primary">View List</button>
+        <button mat-raised-button color="primary" routerLink="/datatable">View List</button>
       </div>
     </div>
   </form>

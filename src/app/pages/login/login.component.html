@@ -1,5 +1,13 @@
 <div class="login-content">
   <form class="form-content" [formGroup]="loginForm">
+    <a routerLink="/welcome" class="icon-but">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      ></mat-icon>
+    </a>
+
     <div class="container-text-log">
       <h2>Log-In</h2>
     </div>
@@ -32,13 +40,13 @@
     </mat-form-field>
 
     <div class="container-button1">
-      <a mat-flat-button href="#" target="_blank"
+      <a mat-flat-button routerLink="/register" target="_blank"
         >Don't have account? Register</a
       >
     </div>
     <div class="container-button2">
       <button mat-raised-button color="primary" (click)="submitLogin()">
-        Send  ➤
+        Send ➤
       </button>
     </div>
   </form>

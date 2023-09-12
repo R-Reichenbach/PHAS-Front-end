@@ -1,9 +1,17 @@
 <div class="register-content">
   <form class="form-contentr" [formGroup]="registerForm">
+    <a routerLink="/welcome" class="icon-but">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      ></mat-icon>
+    </a>
     <div class="container-text-log-reg">
       <h2>Register</h2>
       <h3>Create Your Account!</h3>
     </div>
+    
     <div>
       <form class="example-form">
         <table class="example-full-width" cellspacing="0">
@@ -79,6 +87,9 @@
           <input type="tel" matInput placeholder="011 12345-1234" />
           <mat-icon matSuffix></mat-icon>
         </mat-form-field>
+        <div class="back-button">
+          <button mat-flat-button routerLink="/welcome">↩ Back</button>
+        </div>
         <div class="send-button">
           <button mat-raised-button color="primary">Register</button>
         </div>

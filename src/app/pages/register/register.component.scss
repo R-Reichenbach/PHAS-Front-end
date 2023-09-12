@@ -12,7 +12,7 @@
     justify-content: center;
     text-align: center;
     width: 35%;
-    height: 47rem;
+    height: 51rem;
     transition: all 0.5s ease-in-out;
   }
 
@@ -34,6 +34,18 @@
     Medium Italic,
     Helvetica,
     sans-serif;
+}
+
+.icon-but {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+a{
+  color: black;
 }
 
 .example-full-width {
@@ -85,6 +97,14 @@
   padding: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.back-button{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .prefix{

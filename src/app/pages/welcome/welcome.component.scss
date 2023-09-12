@@ -71,6 +71,14 @@
   margin-top: 2rem;
 }
 
+.login-button{
+  flex-wrap: wrap;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
 .view-button {
   flex-wrap: wrap;
   display: flex;
@@ -84,3 +92,4 @@
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
 }
+
