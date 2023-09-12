@@ -50,9 +50,12 @@
 }
 
 .wht {
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+  border: 1px solid gray;
+  
   font-family:
     Medium Italic,
     Helvetica,
@@ -75,4 +78,9 @@
   justify-content: right;
   align-items: right;
   margin-left: 30px;
+}
+
+.h4{
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
 }
