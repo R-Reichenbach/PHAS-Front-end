@@ -23,7 +23,7 @@ export class WelcomeComponent {
   ngOnInit(): void{
     this.welcomeForm = this.formBuilder.group(
       {
-      
+
       }
     );
   }
